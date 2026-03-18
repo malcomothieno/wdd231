@@ -1,1 +1,80 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of commerce Directory</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <meta name="description" content="WDD 231 - Web Frontend development 1, a webpage by Othieno Malcom offering a home page for chamber of commerce.">
+    <meta name="author" content="Othieno Malcom">
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn.corporatefinanceinstitute.com/assets/international-chamber-of-commerce.jpeg">
+    <meta property="og:url" content="https://malcomothieno.github.io/wdd231/chamber/directory.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/scripts.js" defer></script>
+    <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/aero.jpg" alt="Kampala Chamber of Commerce">
+                <h1>Kampala</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                   
+                </ul>
+                <div class="theme-toggle">
+                    <button id="theme-toggle-btn">Theme light</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Member Directory</h2>
+        <div id="view-toggle">
+            <button id="grid-view">Grid View</button>
+            <button id="list-view">List View</button>
+        </div>
+        <section id="member-list">
+            <!-- Member cards or list items will be injected here by JavaScript -->
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p><strong>Kampala Chamber of Commerce</strong></p>
+                <p>Kololo, Grounds</p>
+                <p>Kampala, Uganda</p>
+                <p>info@kampA.org</p>
+                <p>(+256) 766-697-068</p>
+            </div>
+           
+            <div class="footer-info">
+                <p>WDD231 Project</p>
+                <p>Othieno Malcom</p>
+                <p>&copy; <span id="year"></span> Kampala Chamber of Commerce</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </div>
+             <div class="footer-social">
+                <a href="#"><img src="images/youtube-icon.png" alt="YouTube"></a>
+                <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
