@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Abanista",
+        "address": "Plot 572, Namugongo - Bbuto Rd, Kampala, Uganda",
+        "website": "https://www.abanista.com/",
+        "image": "abanista.png",
+        "description": "Custom cabinetry and interior woodwork for homes and offices."
+    },
+    {
+        "name": "Prime Electronics",
+        "address": "Katwe, Kampala, Uganda",
+        "website": "https://primeelectronicsug.com/",
+        "image": "prime.png",
+        "description": "Retail electronics and accessories with local service support."
+    },
+    {
+        "name": "Elektrex",
+        "address": "Industrial Area, Kampala, Uganda",
+        "website": "https://www.elektrex.ug/",
+        "image": "elektrex.jpeg",
+        "description": "Electrical products and professional installation solutions."
+    },
+    {
+        "name": "Tronic",
+        "address": "Jinja Road, Kampala, Uganda",
+        "website": "https://tronic.ug/",
+        "image": "tronic.jpg",
+        "description": "Smart devices, appliances, and digital tech products."
+    },
+    {
+        "name": "Chint Uganda",
+        "address": "6th Street Industrial Area, Kampala, Uganda",
+        "website": "https://chintuganda.com/",
+        "image": "chint.jpg",
+        "description": "Power distribution and industrial automation components."
+    },
+    {
+        "name": "Varsani",
+        "address": "7th Street Industrial Area, Kampala, Uganda",
+        "website": "https://varsanigroup.com/",
+        "image": "varsani.jpeg",
+        "description": "Regional supply and support for engineering services."
+    },
+    {
+        "name": "Appliance World",
+        "address": "Spring Close, Bugolobi, Kampala, Uganda",
+        "website": "https://applianceworld.co.ug/",
+        "image": "appliance.png",
+        "description": "Home appliances, kitchen equipment, and after-sale care."
+    },
+    {
+        "name": "Sefbuy",
+        "address": "Arua Park Plaza, Kampala, Uganda",
+        "website": "https://sefbuy.com/",
+        "image": "sebuy.png",
+        "description": "Online and in-store shopping with local pickup options."
+    }
+]
