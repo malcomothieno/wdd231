@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Discover</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <meta name="description" content="WDD 231 - Web Frontend Development 1, a webpage by Othieno Malcom offering a home page for the Chamber of Commerce.">
+    <meta name="author" content="Jonathan Aloya">
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn.corporatefinanceinstitute.com/assets/international-chamber-of-commerce.jpeg">
+    <meta property="og:url" content="https://malcomotieno.github.io/wdd231/chamber/discover.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/jalok.png" alt="Kampala Chamber of Commerce">
+                <h1>Kampala</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+            <nav>
+                <button id="menu-button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+                <ul id="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html" aria-current="page">Discover</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <button id="theme-toggle-btn">Theme Light</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="sidebar">
+            <h2>Visitor Info</h2>
+            <p id="visit-message"></p>
+            <h2>Events</h2>
+            <ul id="event-list">
+                <li>
+                    <h3>Inventors Connect</h3>
+                    <p>Date: Jun 11, 2026</p>
+                    <p>Location: City Bay</p>
+                    <p>Description: Come and be part of inventors from different fields and add on what you know.</p>
+                </li>
+                <li>
+                    <h3>Deep Minds Work</h3>
+                    <p>Date: May 12, 2026</p>
+                    <p>Location: Verbal centers</p>
+                    <p>Description: Meet some of the best minds at doing businesses and learn fairly from them.</p>
+                </li>
+                <li>
+                    <h3>Tech Trumpet</h3>
+                    <p>Date: Aug 1, 2026</p>
+                    <p>Location: Lugogo playgrounds</p>
+                    <p>Description: Be part of the pioneers to celebrate tech emergence in the country.</p>
+                </li>
+            </ul>
+            <!-- Add events or other sidebar content here -->
+            <div id="calendar">
+                <button id="prev-month">&lt;</button>
+                <button id="next-month">&gt;</button>
+                <h3 id="calendar-month-year"></h3>
+                <div id="calendar-days"></div>
+            </div>
+        </section>
+        <section class="main-content">
+            <h2>Discover Local Highlights</h2>
+            <p class="intro-text">Explore featured local businesses and services loaded from our JSON data source.</p>
+            <div id="discover-cards" class="discover-cards">
+                <!-- Cards are rendered from data/discover.json -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p><strong>Kampala Chamber of Commerce</strong></p>
+                <p>Kololo, Avenue</p>
+                <p>Kampala, Uganda</p>
+                <p>info@kampA.org</p>
+                <p>(+256) 766-697-068</p>
+            </div>
+     
+            <div class="footer-info">
+                <p>WDD231 Project</p>
+                <p>Othieno Malcom</p>
+                <p>&copy; <span id="year"></span> Kampala Chamber of Commerce</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </div>
+                <div class="footer-social">
+                <a href="#"><img src="images/youtube-icon.png" alt="YouTube"></a>
+                <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/discover.js"></script>
+</body>
+</html>
