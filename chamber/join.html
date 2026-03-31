@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join and and the chamber name</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <meta name="description" content="WDD 231 - Web Frontend development 1, a webpage by Othieno Malcom offering a home page for chamber of commerce.">
+    <meta name="author" content="Othieno Malcom">
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn.corporatefinanceinstitute.com/assets/international-chamber-of-commerce.jpeg">
+    <meta property="og:url" content="https://malcomothieno.github.io/wdd231/chamber/directory.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/aero.jpg" alt="Kampala Chamber of Commerce">
+                <h1>Kampala</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                  
+                </ul>
+                <div class="theme-toggle">
+                    <button id="theme-toggle-btn">Theme Light</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Join Us</h2>
+        <form>
+        <form method="get" action="thankyou.html">
+            <label>
+                First Name:
+                <input type="text" name="first-name" title="First Name" autocomplete="given-name" required>
+            </label>
+            <br>
+            <label>
+                Last Name:
+                <input type="text" name="last-name" title="Last Name" autocomplete="family-name" required>
+            </label>
+            <br>
+            <label>
+                Organizational Title:
+                <input type="text" name="organization-title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+            </label>
+            <br>
+            <label>
+                Email:
+                <input type="email" name="email" title="Email Address" autocomplete="email" placeholder="example@domain.com" required>
+            </label>
+            <br>
+            <label>
+                Mobile Phone Number:
+                <input type="tel" name="mobile-phone" title="Mobile Phone Number" autocomplete="tel" required>
+            </label>
+            <br>
+            <label>
+                Business/Organization Name:
+                <input type="text" name="organization" title="Organization Name" autocomplete="organization" required>
+            </label>
+            <br>
+            <label>
+                Membership Level:
+                <select name="membership-level" title="Membership Level" required>
+                    <option value=""> Select Membership Option...</option>
+                    <option value="NP">NP Membership</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+            </label>
+            <br>
+            <label>
+                <button type="button" onclick="showModal()">Learn More About Membership</button>
+            </label>
+            <br>
+            <label>
+                Business/Organization Description:
+                <textarea name="organization-description" title="Organization Description"></textarea>
+            </label>
+            <br>
+            <input type="hidden" name="timestamp" id="timestamp">
+            <br>
+            <label>
+            <input type="submit" value="Submit">
+            </label>
+        </form>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p><strong>Kampala Chamber of Commerce</strong></p>
+                <p>Kololo, Grounds</p>
+                <p>Kampala, Uganda</p>
+                <p>info@kampA.org</p>
+                <p>(+256) 766-697-068</p>
+            </div>
+           
+            <div class="footer-info">
+                <p>WDD231 Project</p>
+                <p>Othieno Malcom</p>
+                <p>&copy; <span id="year"></span> Kampala Chamber of Commerce</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </div>
+             <div class="footer-social">
+                <a href="#"><img src="images/youtube-icon.png" alt="YouTube"></a>
+                <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/join.js"></script>
+
+    <!-- Modal -->
+    <div id="membershipModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Membership Benefits</h2>
+            <div class="membership-card">
+    <h3>NP Membership</h3>
+    <p>A free entry-level option for individuals and nonprofits to connect, learn, and participate in selected events and training sessions.</p>
+</div>
+
+<div class="membership-card">
+    <h3>Bronze Membership</h3>
+    <p>Ideal for growing members who want regular access to events, hands-on training, promotional exposure, and member-only discounts.</p>
+</div>
+
+<div class="membership-card">
+    <h3>Silver Membership</h3>
+    <p>Designed for active members seeking greater visibility, including featured promotion on the homepage and enhanced discounts on events.</p>
+</div>
+
+<div class="membership-card">
+    <h3>Gold Membership</h3>
+    <p>Our premium tier offering top-level exposure, priority access to exclusive events, and the widest range of advertising opportunities.</p>
+</div>
+
+        </div>
+    </div>
+
+    <script src="scripts/join.js"></script>
+</body>
+</html>
