@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Confirmed – GreenTrail Hub</title>
+  <meta name="description" content="Your guided hike registration with GreenTrail Hub has been submitted successfully." />
+  <meta name="author" content="GreenTrail Hub" />
+  <meta property="og:title" content="Registration Confirmed – GreenTrail Hub" />
+  <meta property="og:description" content="Your guided hike registration is confirmed. Get ready to hit the trails!" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="GreenTrail Hub Home">
+        <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 2 L34 30 L2 30 Z" fill="#F5F5F5" opacity="0.9"/>
+          <path d="M18 10 L28 28 L8 28 Z" fill="#2E7D32"/>
+        </svg>
+        <span>GreenTrail Hub</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trails.html">Trails</a></li>
+          <li><a href="join.html">Join a Hike</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section confirmation-section">
+      <div class="container">
+        <div class="confirmation-card" id="confirmationCard">
+          <div class="confirm-icon" aria-hidden="true">✅</div>
+          <h1>Registration Confirmed!</h1>
+          <p class="confirm-sub">Here's a summary of your submission:</p>
+          <dl class="confirm-data" id="confirmData">
+            <!-- Populated by JavaScript -->
+          </dl>
+          <div class="confirm-actions">
+            <a href="trails.html" class="btn btn-outline">Browse More Trails</a>
+            <a href="join.html" class="btn btn-primary">Register Another Hike</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <svg width="28" height="28" viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 2 L34 30 L2 30 Z" fill="#F5F5F5" opacity="0.9"/>
+          <path d="M18 10 L28 28 L8 28 Z" fill="#2E7D32"/>
+        </svg>
+        <span>GreenTrail Hub</span>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="trails.html">Trails</a>
+        <a href="join.html">Join a Hike</a>
+        <a href="attributions.html">Attributions</a>
+      </nav>
+      <p class="footer-video">🎥 <a href="https://youtu.be/your-video-link" target="_blank" rel="noopener">Watch Project Demo Video</a></p>
+      <p class="footer-copy">© 2026 GreenTrail Hub | WDD231 Project</p>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/form-action.js"></script>
+</body>
+</html>
