@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" width="400" height="160">
+  <!-- Sky gradient -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#81C784"/>
+      <stop offset="100%" stop-color="#C8E6C9"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4CAF50"/>
+      <stop offset="100%" stop-color="#2E7D32"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="160" fill="url(#sky)"/>
+
+  <!-- Mountains -->
+  <polygon points="0,110 70,40 140,110" fill="#388E3C" opacity="0.6"/>
+  <polygon points="60,110 150,30 240,110" fill="#2E7D32" opacity="0.8"/>
+  <polygon points="180,110 280,50 380,110" fill="#1B5E20" opacity="0.7"/>
+  <polygon points="300,110 380,60 460,110" fill="#388E3C" opacity="0.5"/>
+
+  <!-- Ground -->
+  <rect y="108" width="400" height="52" fill="url(#ground)"/>
+
+  <!-- Trail path -->
+  <path d="M 180 160 Q 200 130 220 110 Q 240 90 230 70" stroke="#F5F5F5" stroke-width="3" fill="none" stroke-dasharray="6,4" opacity="0.7"/>
+
+  <!-- Trees -->
+  <g transform="translate(30,70)">
+    <rect x="-3" y="20" width="6" height="18" fill="#4E342E"/>
+    <polygon points="0,0 14,25 -14,25" fill="#1B5E20"/>
+    <polygon points="0,8 12,30 -12,30" fill="#2E7D32"/>
+  </g>
+  <g transform="translate(340,60)">
+    <rect x="-3" y="20" width="6" height="18" fill="#4E342E"/>
+    <polygon points="0,0 14,25 -14,25" fill="#1B5E20"/>
+    <polygon points="0,8 12,30 -12,30" fill="#2E7D32"/>
+  </g>
+  <g transform="translate(80,75)">
+    <rect x="-2" y="15" width="4" height="12" fill="#4E342E"/>
+    <polygon points="0,0 10,18 -10,18" fill="#2E7D32"/>
+  </g>
+
+  <!-- Sun -->
+  <circle cx="340" cy="28" r="14" fill="#FFF9C4" opacity="0.9"/>
+  <circle cx="340" cy="28" r="10" fill="#FFF176"/>
+</svg>
