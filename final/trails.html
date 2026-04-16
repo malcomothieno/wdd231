@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trail Directory – GreenTrail Hub</title>
+  <meta name="description" content="Browse all regional hiking trails with detailed specs including distance, elevation gain, difficulty level, and surface type." />
+  <meta name="author" content="GreenTrail Hub" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Trail Directory – GreenTrail Hub" />
+  <meta property="og:description" content="Browse all regional hiking trails with detailed specs including distance, elevation gain, difficulty, and surface type." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourusername.github.io/greentrail/trails.html" />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="GreenTrail Hub Home">
+        <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 2 L34 30 L2 30 Z" fill="#F5F5F5" opacity="0.9"/>
+          <path d="M18 10 L28 28 L8 28 Z" fill="#2E7D32"/>
+        </svg>
+        <span>GreenTrail Hub</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trails.html" class="active" aria-current="page">Trails</a></li>
+          <li><a href="join.html">Join a Hike</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Trail Directory</h1>
+        <p>Find your perfect trail. Filter by difficulty and discover what lies ahead.</p>
+      </div>
+    </section>
+
+    <section class="section trails-section">
+      <div class="container">
+        <!-- Filter Controls -->
+        <div class="filter-bar" role="group" aria-label="Filter trails by difficulty">
+          <span class="filter-label">Filter by difficulty:</span>
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn easy" data-filter="Easy">Easy</button>
+          <button class="filter-btn moderate" data-filter="Moderate">Moderate</button>
+          <button class="filter-btn hard" data-filter="Hard">Hard</button>
+        </div>
+
+        <p class="results-count" id="resultsCount" aria-live="polite"></p>
+
+        <!-- Trail Cards -->
+        <div class="trail-grid all-trails" id="allTrailsGrid" aria-live="polite">
+          <div class="loading-spinner">Loading trails…</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Trail Detail Modal -->
+  <dialog id="trailModal" aria-labelledby="modalTitle" aria-modal="true">
+    <div class="modal-inner">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </dialog>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <svg width="28" height="28" viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 2 L34 30 L2 30 Z" fill="#F5F5F5" opacity="0.9"/>
+          <path d="M18 10 L28 28 L8 28 Z" fill="#2E7D32"/>
+        </svg>
+        <span>GreenTrail Hub</span>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="trails.html">Trails</a>
+        <a href="join.html">Join a Hike</a>
+        <a href="attributions.html">Attributions</a>
+      </nav>
+      <p class="footer-video">🎥 <a href="https://youtu.be/your-video-link" target="_blank" rel="noopener">Watch Project Demo Video</a></p>
+      <p class="footer-copy">© 2026 GreenTrail Hub | WDD231 Project</p>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/trails.js"></script>
+</body>
+</html>
