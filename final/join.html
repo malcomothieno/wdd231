@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join a Guided Hike – GreenTrail Hub</title>
+  <meta name="description" content="Register to join a community-led guided hike with GreenTrail Hub. Choose your trail, experience level, and preferred date." />
+  <meta name="author" content="GreenTrail Hub" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Join a Guided Hike – GreenTrail Hub" />
+  <meta property="og:description" content="Register for a community-led guided hike. Choose your trail, experience level, and preferred date." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourusername.github.io/greentrail/join.html" />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="GreenTrail Hub Home">
+        <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 2 L34 30 L2 30 Z" fill="#F5F5F5" opacity="0.9"/>
+          <path d="M18 10 L28 28 L8 28 Z" fill="#2E7D32"/>
+        </svg>
+        <span>GreenTrail Hub</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trails.html">Trails</a></li>
+          <li><a href="join.html" class="active" aria-current="page">Join a Hike</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Join a Guided Hike</h1>
+        <p>Complete the form below to register for an upcoming community-led group hike.</p>
+      </div>
+    </section>
+
+    <section class="section form-section">
+      <div class="container form-container">
+        <div class="form-info">
+          <h2>What to Expect</h2>
+          <ul class="expect-list">
+            <li>🌲 Expert local trail guide</li>
+            <li>📍 Meeting point details sent by email</li>
+            <li>🎒 Recommended gear list included</li>
+            <li>🌤️ Weather check the morning of the hike</li>
+          </ul>
+          <div class="tip-box">
+            <strong>Tip:</strong> Beginners welcome on Easy and Moderate hikes. Bring water and sunscreen!
+          </div>
+        </div>
+
+        <div class="form-card">
+          <h2>Registration Form</h2>
+          <form id="hikeForm" action="form-action.html" method="get" novalidate>
+            <div class="form-group">
+              <label for="fname">First Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="fname" name="fname" required autocomplete="given-name" placeholder="e.g. Alex" />
+              <span class="field-error" id="fnameError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="lname">Last Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="lname" name="lname" required autocomplete="family-name" placeholder="e.g. Morgan" />
+              <span class="field-error" id="lnameError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com" />
+              <span class="field-error" id="emailError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="(555) 000-0000" />
+            </div>
+
+            <div class="form-group">
+              <label for="trail">Preferred Trail <span aria-hidden="true">*</span></label>
+              <select id="trail" name="trail" required>
+                <option value="">-- Choose a trail --</option>
+                <option value="Riverside Loop">Riverside Loop (Easy)</option>
+                <option value="Maple Ridge Path">Maple Ridge Path (Easy)</option>
+                <option value="Cedar Creek Walk">Cedar Creek Walk (Easy)</option>
+                <option value="Granite Peak Loop">Granite Peak Loop (Moderate)</option>
+                <option value="Eagle Crest Trail">Eagle Crest Trail (Moderate)</option>
+                <option value="Summit Bluff Trail">Summit Bluff Trail (Hard)</option>
+              </select>
+              <span class="field-error" id="trailError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="experience">Experience Level <span aria-hidden="true">*</span></label>
+              <select id="experience" name="experience" required>
+                <option value="">-- Select level --</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+              </select>
+              <span class="field-error" id="experienceError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="date">Preferred Date <span aria-hidden="true">*</span></label>
+              <input type="date" id="date" name="date" required />
+              <span class="field-error" id="dateError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Additional Notes</label>
+              <textarea id="message" name="message" rows="3" placeholder="Any questions, medical notes, or special requests…"></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="newsletter" name="newsletter" value="yes" />
+              <label for="newsletter">Subscribe to our trail updates newsletter</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary full-width">Register Now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <svg width="28" height="28" viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 2 L34 30 L2 30 Z" fill="#F5F5F5" opacity="0.9"/>
+          <path d="M18 10 L28 28 L8 28 Z" fill="#2E7D32"/>
+        </svg>
+        <span>GreenTrail Hub</span>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="trails.html">Trails</a>
+        <a href="join.html">Join a Hike</a>
+        <a href="attributions.html">Attributions</a>
+      </nav>
+      <p class="footer-video">🎥 <a href="https://youtu.be/your-video-link" target="_blank" rel="noopener">Watch Project Demo Video</a></p>
+      <p class="footer-copy">© 2026 GreenTrail Hub | WDD231 Project</p>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/join.js"></script>
+</body>
+</html>
