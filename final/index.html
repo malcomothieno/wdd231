@@ -1,79 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenTrail Hub | Site Plan</title>
-    <meta name="description" content="Site plan for the GreenTrail Hub individual project for WDD 231.">
-    <meta name="author" content="Your Name">
-    <link rel="stylesheet" href="site-plan.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenTrail Hub – Explore Local Hiking Trails</title>
+  <meta name="description" content="GreenTrail Hub is your central resource for regional hiking trails, difficulty ratings, and community group hikes in your area." />
+  <meta name="author" content="GreenTrail Hub" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="GreenTrail Hub – Explore Local Hiking Trails" />
+  <meta property="og:description" content="Discover trail specs, difficulty ratings, and join guided group hikes near you." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourusername.github.io/greentrail/" />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
 </head>
 <body>
-    <header>
-        <h1>GreenTrail Hub Site Plan</h1>
-        <h2>Individual Project Planning Document</h2>
-    </header>
-    <main>
-        <section>
-            <h3>Site Name</h3>
-            <p><strong>Name:</strong> GreenTrail Hub [cite: 3, 30]</p>
-            <p><strong>Reason:</strong> This name was selected because it identifies the site as a central resource (a "hub") for local hiking data and community connection. [cite: 3, 30]</p>
-        </section>
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="GreenTrail Hub Home">
+        <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 2 L34 30 L2 30 Z" fill="#F5F5F5" opacity="0.9"/>
+          <path d="M18 10 L28 28 L8 28 Z" fill="#2E7D32"/>
+        </svg>
+        <span>GreenTrail Hub</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="trails.html">Trails</a></li>
+          <li><a href="join.html">Join a Hike</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <hr>
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Your Trail Starts Here</h1>
+        <p>Discover regional hiking trails, compare difficulty ratings, and connect with guided group hikes in your community.</p>
+        <div class="hero-cta">
+          <a href="trails.html" class="btn btn-primary">Browse Trails</a>
+          <a href="join.html" class="btn btn-secondary">Join a Hike</a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" id="trailCount">20+</span><span class="stat-label">Trails</span></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Difficulty Levels</span></div>
+        <div class="stat"><span class="stat-num">100+</span><span class="stat-label">Community Members</span></div>
+      </div>
+    </section>
 
-        <section>
-            <h3>Site Purpose</h3>
-            <p>The site provides a hub for regional hiking by providing trail specifications and difficulty ratings along with a membership information form for guided group hikes. [cite: 5, 33]</p>
-        </section>
+    <!-- Featured Trails -->
+    <section class="section featured-trails">
+      <div class="container">
+        <h2>Featured Trails</h2>
+        <p class="section-sub">A snapshot of what's waiting for you</p>
+        <div class="trail-grid" id="featuredGrid">
+          <div class="loading-spinner" aria-live="polite">Loading trails…</div>
+        </div>
+        <a href="trails.html" class="btn btn-outline center-btn">View All Trails →</a>
+      </div>
+    </section>
 
-        <hr>
+    <!-- Why GreenTrail Hub -->
+    <section class="section why-section">
+      <div class="container">
+        <h2>Why GreenTrail Hub?</h2>
+        <div class="why-grid">
+          <div class="why-card">
+            <span class="why-icon" aria-hidden="true">🗺️</span>
+            <h3>Detailed Trail Data</h3>
+            <p>Every trail includes distance, elevation gain, difficulty, and surface type so you can plan with confidence.</p>
+          </div>
+          <div class="why-card">
+            <span class="why-icon" aria-hidden="true">👥</span>
+            <h3>Community Hikes</h3>
+            <p>Register for guided group hikes led by experienced local guides. Safe, social, and scenic.</p>
+          </div>
+          <div class="why-card">
+            <span class="why-icon" aria-hidden="true">📱</span>
+            <h3>Mobile Friendly</h3>
+            <p>Access trail information on any device, whether you're planning at home or standing at the trailhead.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section>
-            <h3>Scenarios</h3>
-            <ul>
-                <li>"Which trails in my area are classified as 'Easy' and have an elevation gain of less than 300 feet?" [cite: 7, 37]</li>
-                <li>"Where can I find the registration form to join the next community-led group hike?" [cite: 7, 38]</li>
-            </ul>
-        </section>
+    <!-- Last Visited Banner -->
+    <div class="last-visit-banner" id="lastVisitBanner" hidden>
+      <div class="container">
+        <p id="lastVisitMsg"></p>
+        <button class="banner-close" id="closeBanner" aria-label="Close banner">✕</button>
+      </div>
+    </div>
+  </main>
 
-        <hr>
+  <!-- Trail Detail Modal -->
+  <dialog id="trailModal" aria-labelledby="modalTitle" aria-modal="true">
+    <div class="modal-inner">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </dialog>
 
-        <section>
-            <h3>Color Schema</h3>
-            <p>This document uses the selected color scheme exclusively. [cite: 41]</p>
-            <div class="color-box primary">Primary: #2E7D32 (Forest Green) - Used for Headings and Nav [cite: 40]</div>
-            <div class="color-box secondary">Secondary: #F5F5F5 (Ghost White) - Used for Backgrounds [cite: 40]</div>
-            <div class="color-box accent">Accent: #1B5E20 (Dark Green) - Used for Accents/Footers [cite: 40]</div>
-        </section>
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <svg width="28" height="28" viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 2 L34 30 L2 30 Z" fill="#F5F5F5" opacity="0.9"/>
+          <path d="M18 10 L28 28 L8 28 Z" fill="#2E7D32"/>
+        </svg>
+        <span>GreenTrail Hub</span>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="trails.html">Trails</a>
+        <a href="join.html">Join a Hike</a>
+        <a href="attributions.html">Attributions</a>
+      </nav>
+      <p class="footer-video">🎥 <a href="https://youtu.be/your-video-link" target="_blank" rel="noopener">Watch Project Demo Video</a></p>
+      <p class="footer-copy">© 2026 GreenTrail Hub | WDD231 Project</p>
+    </div>
+  </footer>
 
-        <hr>
-
-        <section>
-            <h3>Typography</h3>
-            <ul>
-                <li><strong>Heading Font:</strong> 'Montserrat', sans-serif - Used for all main headings. [cite: 43, 44]</li>
-                <li><strong>Body Font:</strong> 'Open Sans', sans-serif - Used for all paragraphs and lists. [cite: 43, 44]</li>
-            </ul>
-        </section>
-
-        <hr>
-
-        <section>
-            <h3>Wireframe</h3>
-            <p>Home Page Layout Plan[cite: 46]:</p>
-            <h4>Mobile View</h4>
-            <img src="https://placehold.co/320x500/2E7D32/FFFFFF?text=Mobile+Wireframe+Stacked+Layout" alt="Mobile Wireframe showing a single column stacked layout" loading="lazy"> [cite: 16, 48]
-            <h4>Desktop View</h4>
-            <img src="https://placehold.co/800x500/2E7D32/FFFFFF?text=Desktop+Wireframe+3-Column+Grid" alt="Desktop Wireframe showing a horizontal nav and 3-column trail grid" loading="lazy"> [cite: 16, 48]
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 | GreenTrail Hub | Your Name</p>
-        <p><a href="#">Video Demonstration Link</a></p> [cite: 112]
-    </footer>
+  <script type="module" src="scripts/main.js"></script>
 </body>
 </html>
